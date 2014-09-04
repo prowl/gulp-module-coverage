@@ -29,6 +29,8 @@ before_install:
 install:
 
 before_script:
+  - cd node_modules/gulp-module/node_modules/gulp-module-unit-tests && npm i
+  - cd ../../../../
 
 script:
   - gulp build
